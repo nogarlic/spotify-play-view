@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Spotify</title>
+
+    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/css/all.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <script src="https://kit.fontawesome.com/d169a30387.js" crossorigin="anonymous"></script>
+    
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossorigin="anonymous">
+    <link rel="stylesheet" type="text/css" href="style.css"  />
+</head>
+<body>
+    <div class="container">
+        <!-- <div class="header"> -->
+            <div class="playlist">
+                <i class="fa-solid fa-v"></i>
+                <div class="playlist-name">
+                    <p>PLAYING FROM PLAYLIST</p>
+                    <p><strong>Friends dont't lie.</strong></p>
+                </div>
+                <i class="fa-solid fa-ellipsis-vertical"></i>
+            <!-- </div> -->
+        </div>
+
+        <!-- <div class="cover">
+            <img src="image\patrick loves you.jpg" alt="Cover" srcset="">
+        </div> -->
+
+        
+        
+        <div class="video-bg">
+            <div class="black-square-top"></div>
+            <video autoplay muted loop id="myVideo">
+                <source id="myVideoSource" src="video\max flying scene st.mp4" type="video/mp4">
+                Your browser does not support HTML5 video.
+            </video>
+            <div class="black-square-bottom"></div>
+        </div>
+
+        <div class="song">
+            <div class="detail">
+                <p id="song-title"><strong>Running Up That Hill</strong></p>
+                <p id="singer">Kate Bush</p>
+            </div>
+            <div class="like">
+                <i class="fa-regular fa-heart"></i>
+            </div>
+        </div>
+
+        <div class="song-player">
+            <audio id="myAudio" preload="metadata">
+                <source id="myAudioSource" src="music\Kate Bush -  Running Up That Hill.mp3" type="audio/mp3">
+                Your browser does not support the audio element.
+            </audio>
+            <div class="slider-container">
+                <input type="range" min="1" max="100" value="0" class="seek_slider" onchange="seekTo()">
+                <div class="song-timer">
+                    <div class="current-time"><p>0:00</p></div>
+                    <div class="total-duration"><p>0:00</p></div>
+                </div>
+            </div>
+
+            <div class="buttons">
+                <div class="random-track" onclick="randomTrack()">
+                    <i class="fas fa-random" title="random"></i>
+                </div>
+                <div class="prev-track">
+                    <i class="fa fa-step-backward fa-2x"></i>
+                </div>
+                <div class="playpause-track">
+                    <i class="fa fa-play-circle fa-4x"></i>
+                </div>
+                <div class="next-track">
+                    <i class="fa fa-step-forward fa-2x"></i>
+                </div>
+                <div class="repeat-track" onclick="forbidden()">
+                    <i class="fa fa-light fa-circle-minus"></i>
+                </div>
+            </div>
+
+            <div class="connect">
+                <i class="fa-solid fa-computer"></i>
+                <i class="fa fa-light fa-share-nodes"></i>
+            </div>
+            
+            <div class="lyrics">
+                <div class="lyrics-header">
+                    <div class="tag-lyrics">
+                        <p>Lyrics</p>
+                    </div>
+                    <div class="share-expand">
+                        <i class="fa fa-light fa-share-nodes"></i>
+                        <i class="fa-solid fa-up-right-and-down-left-from-center"></i>
+                    </div>
+                </div>
+                <div class="lyrics-detail">
+                    <p>And if I only could<br>
+                        Make a deal with God<br>
+                        And get him to swap our places<br>
+                        Be running up that road<br>
+                        Be running up that hill<br>
+                        Be running up that building</p>
+                </div>
+            </div>
+
+        </div>
+    </div>
+
+    <script type="module" src="script.js"></script>
+
+</body>
+</html>

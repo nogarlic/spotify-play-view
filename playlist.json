@@ -1,0 +1,18 @@
+{
+    "playlist" : [
+        {
+            "song" : "Running Up That Hill",
+            "singer" : "Kate Bush",
+            "video" : "video\\max flying scene st.mp4",
+            "audio" : "music\\Kate Bush -  Running Up That Hill.mp3",
+            "lyrics" : "<p>And if I only could<br>Make a deal with God<br>And get him to swap our places<br>Be running up that road<br>Be running up that hill<br>Be running up that building</p>"
+        },
+        {
+            "song" : "Sparkle",
+            "singer" : "RADWIMPS",
+            "video" : "video\\KiminoNawa.mp4",
+            "audio" : "music\\Sparkle Your Name AMV.mp3",
+            "lyrics" : "<p>まだこの世界は<br>僕を飼いならしてたいみたいだ<br>望み通りいいだろう<br>美しくもがくよ</p>"
+        }
+    ]
+}
