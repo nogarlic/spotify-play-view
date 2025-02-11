@@ -82,7 +82,15 @@ let currentPlayingSinger = document.querySelector('#singer');
 // let currentPlayingVideo = document.querySelector("#myVideoSource");
 // let currentPlayingSong = document.querySelector("#myAudioSource")
 
-import data from "./playlist.json" assert { type: "json" };
+let data = {};
+
+fetch("./playlist.json")
+    .then(response => response.json())
+    .then(json => {
+        data = json;
+        console.log("Playlist loaded:", data);
+    })
+    .catch(error => console.error("Error loading playlist:", error));
 let songnum = 0;
 
 function nextTrack(){
